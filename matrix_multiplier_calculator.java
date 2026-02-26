@@ -9,15 +9,15 @@ public class matrix_multiplier_calculator
             System.out.println("Welcome to matrix multiplier calculator");
             while(true)
             {
-                System.out.println("Entre row of first matrix");
+                System.out.println("Enter row of first matrix");
                 int row1=read.nextInt();
                 System.out.println();
-                System.out.println("Entre column of first matrix");
+                System.out.println("Enter column of first matrix");
                 int column1=read.nextInt();
                 read.nextLine();
                 System.out.println();
                 int matrix1 [][]=new int [row1][column1];
-                System.out.println("Entre first matrix");
+                System.out.println("Enter first matrix");
                 for (int i=0; i<row1; i++)
                 {
                     for (int j=0; j<column1; j++)
@@ -36,15 +36,15 @@ public class matrix_multiplier_calculator
                     System.out.println();
                 }
                 System.out.println();
-                System.out.println("Entre row of second matrix");
+                System.out.println("Enter row of second matrix");
                 int row2=read.nextInt();
                 System.out.println();
-                System.out.println("Entre column of second matrix");
+                System.out.println("Enter column of second matrix");
                 int column2=read.nextInt();
                 read.nextLine();
                 System.out.println();
                 int matrix2 [][]=new int [row2][column2];
-                System.out.println("Entre second matrix");
+                System.out.println("Enter second matrix");
                 for (int i=0; i<row2; i++)
                 {
                     for (int j=0; j<column2; j++)
@@ -70,10 +70,11 @@ public class matrix_multiplier_calculator
                 {
                     System.out.println("Multiplication possible");
                     System.out.println();
-                    System.out.println("type exit if u dont want to get multiple of both matrices and want to leave");
+                    System.out.println("type exit if you dont want to get multiple of both matrices and want to continue the calculator");
                     String b=read.nextLine();
                     if(b.equalsIgnoreCase("exit"))
                     {
+                        System.out.println();
                         continue;
                     }
                     else
@@ -124,4 +125,5 @@ public class matrix_multiplier_calculator
             }
         }
     }
+
 }
